@@ -3,10 +3,7 @@
 Install dependencies with `pip install -r requirements.txt` using Python 3.10+.
 Run with `uvicorn main:app --reload`. API documentation: `/docs`.
 
-Only model definitions have been added. No migrations, table creation, or
-database configuration changes are included. The endpoints require the tables
-to exist before use.
-
+Phase 1:
 - `POST /categories`: `{"name": "automotive"}`. Names are trimmed and stored
   in lowercase; duplicates return 409.
 - `GET /categories`: list categories.
@@ -21,9 +18,6 @@ to exist before use.
 
 Each article optionally references one category through `category_id`.
 Statuses are `pending`, `processing`, `completed`, and `failed`.
-
-`utils.classify_article(title, content)` matches whole-word keywords in the
-order automotive, technology, healthcare, finance, business, with `general`
 as the fallback. It returns a category name without writing to the database.
 `utils.summarize_article(content)` selects the first two sentences and limits
 the result to 300 characters; empty content returns an empty string.
