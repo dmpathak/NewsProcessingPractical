@@ -1,0 +1,97 @@
+
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ==============================
+# Virtual Environments
+# ==============================
+venv/
+env/
+.venv/
+ENV/
+.ENV/
+
+# ==============================
+# Environment Variables / Secrets
+# ==============================
+.env
+.env.*
+!.env.example
+
+# ==============================
+# FastAPI / Application
+# ==============================
+*.log
+logs/
+uploads/
+temp/
+tmp/
+
+# ==============================
+# Database
+# ==============================
+*.db
+*.sqlite3
+*.sqlite3-journal
+
+# ==============================
+# Testing / Coverage
+# ==============================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+
+# ==============================
+# Type Checking / Linting
+# ==============================
+.mypy_cache/
+.pyright/
+.ruff_cache/
+.dmypy.json
+
+# ==============================
+# Jupyter Notebook
+# ==============================
+.ipynb_checkpoints/
+
+# ==============================
+# IDE / Editors
+# ==============================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==============================
+# OS Generated Files
+# ==============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+# Docker
+# ==============================
+.docker/
+
+# ==============================
+# Miscellaneous
+# ==============================
+*.bak
+*.tmp
+*.orig
